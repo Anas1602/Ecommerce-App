@@ -7,7 +7,9 @@ const Navbar = () => {
 
   return (
     <div className="flex items-center justify-between py-5 font-medium">
-      <img src={assets.logo} className="w-36" />
+      <Link to="/">
+        <img src={assets.logo} className="w-36" />
+      </Link>
       <ul className="hidden sm:flex gap-5 text-sm text-gray-700">
         <NavLink to="/" className="flex flex-col items-center gap-1">
           <p>HOME</p>
@@ -64,25 +66,25 @@ const Navbar = () => {
           </div>
           <NavLink
             onClick={() => setVisible(false)}
-            className="py-2 pl-6 border"
+            className="py-2 pl-6 hover:bg-black hover:text-white"
             to="/">
             HOME
           </NavLink>
           <NavLink
             onClick={() => setVisible(false)}
-            className="py-2 pl-6 border"
+            className="py-2 pl-6 hover:bg-black hover:text-white"
             to="/collection">
             COLLECTION
           </NavLink>
           <NavLink
             onClick={() => setVisible(false)}
-            className="py-2 pl-6 border"
+            className="py-2 pl-6 hover:bg-black hover:text-white"
             to="/about">
             ABOUT
           </NavLink>
           <NavLink
             onClick={() => setVisible(false)}
-            className="py-2 pl-6 border"
+            className="py-2 pl-6 hover:bg-black hover:text-white"
             to="/contact">
             CONTACT
           </NavLink>
