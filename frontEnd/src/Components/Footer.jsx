@@ -32,7 +32,7 @@ const Footer = () => {
 
       <div>
         <hr className="text-gray-200" />
-        <p className="py-5 text-sm text-center">
+        <p className="py-5 text-sm text-center text-gray-500">
           {" "}
           Copyright 2025 &copy; forever.com - All right reserved
         </p>
